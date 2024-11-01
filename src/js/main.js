@@ -2,6 +2,9 @@ import NavBar from "./classes_for_info/nav.js";
 import { navInfo } from "./dataFromBackend/data.js";
 
 
+
+
+
 // INTIALIZING THE APP AND THE COMPONENTS
  const headerNavCompo = new NavBar(navInfo , 'navUl' , 'mobile-nav-ul');  //Nav for header
  headerNavCompo.renderNavPages();

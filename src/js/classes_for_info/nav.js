@@ -14,9 +14,8 @@ export default class NavaBar {
         }
 
     renderMobileNav() {
-        const ul = document.getElementById("mobile-nav-ul");
         const l = this.navInfo.map((item) => {
-            return `<li><a href="${item.url}" class="hover:text-violet-500">${item.title}</a></li>`
+            return `<li><a href="${item.url}" class="hover:text-violet-500 text-[1.2rem]">${item.title}</a></li>`
         }).join('');
         this.mobileNav.innerHTML = l
     }

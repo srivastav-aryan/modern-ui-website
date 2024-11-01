@@ -11,7 +11,7 @@
 <body class="">
     <header class="flex items-center bg-n-8/90 fixed z-50 w-full px-4 lg:px-12 top-0 backdrop-blur-sm border-b border-n-6 py-3 justify-between">
         <div>
-            <img src="/assets/assets/brainwave.svg" alt="">
+            <img src="/assets/assets/brainwave.svg" alt="site-logo">
         </div>
 
         <nav class="hidden lg:block">
@@ -25,25 +25,44 @@
             <button class="text-[.8rem] button">SIGN IN</button>
         </div>
 
-        <button class="text-[3rem] flex justify-center items-center lg:hidden burger button px-2"><span>&#8801</span></button>
-
-        <!-- ---- MOBILE FULL PAGE MENU---- -->
-         <div id="mobile-menu" class="hidden fixed inset-x-0 top-[5.3rem] h-[calc(100vh-5.3rem)] justify-center items-center">
-            <nav class="text-2xl text-center">
-                <ul id="mobile-nav-ul" class="flex flex-col gap-16">
-                    <!-- FROM JS -->
-                </ul>
-
-                <div class="flex flex-col gap-10 mt-12">
-                    <button class="hover:text-violet-500">NEW ACCOUNT</button>
-                    <button class="hover:text-violet-500">SIGN IN</button>
-                </div>
-            </nav>
-         </div>
+        <button class="text-[3rem] block lg:hidden burger px-2">&#8801</button>
     </header>
 
-    <!-- --------- main content starts here -------- -->
+    <!-- ---- MOBILE FULL PAGE MENU---- -->
+    <div id="mobile-menu" class="bg-[url('/assets/assets/hero/robot.jpg')] bg-cover backdrop-blur-sm bg-center hidden lg:hidden w-full h-screen justify-center items-center fixed  z-3">
+         
+        <div class="absolute inset-0 bg-n-8/95 backdrop-blur-sm"></div>
+        <nav class="text-2xl text-center relative z-2">
+            <ul id="mobile-nav-ul" class="flex flex-col gap-14">
+                <!-- FROM JS -->
+            </ul>
 
+            <div class="flex flex-col gap-10 mt-12">
+                <button class="hover:text-violet-500 text-[1.2rem]">NEW ACCOUNT</button>
+                <button class="hover:text-violet-500 text-[1.2rem]">SIGN IN</button>
+            </div>
+        </nav>
+     </div>
+
+    <!-- --------- main content starts here -------- -->
+    <main>
+        <section class="relative top-[5.3rem] text-center bg-cover bg-center bg-[url('/assets/assets/hero/hero-background.jpg')]">
+
+            <div class="container pt-28 flex flex-col justify-center items-center gap-8 ">
+                <h1 class="h1 max-w-[55rem]">Explore the Possibilities of AI Chatting with Brainwave</h1>
+
+                <p class="body-1 max-w-[50rem]">Unleash the power of AI within Brainwave. Upgrade your productivity with Brainwave, the open AI chat app.</p>
+
+                <button class="button">get started</button>
+
+                <div class="h-[32rem] w-[70%] md:h-[38rem] md:w-[95%] lg:h-[35rem] lg:w-[80%] border-2 border-green-400 rounded-lg relative">
+                    <div class="bg-neutral-500 h-[1.3rem] border-t rounded-lg"></div>
+
+                    <img src="/assets/assets/hero/robot.jpg" class="object-cover h-[calc(100%-1.3rem)] w-full border-b rounded-lg" alt="hero section image">
+                </div>
+            </div>
+        </section>
+    </main>
 </body>
 </html>
 
