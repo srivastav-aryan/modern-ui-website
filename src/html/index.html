@@ -9,7 +9,7 @@
     <title>Set your Foot in world of AI</title>
 </head>
 <body class="">
-    <header class="flex items-center bg-n-8/90 fixed z-50 w-full px-4 lg:px-12 top-0 backdrop-blur-sm border-b border-n-6 py-3 justify-between">
+    <header class="flex items-center bg-n-8/90 fixed z-50 w-full px-4 lg:px-12 top-0 backdrop-blur-sm py-3 justify-between">
         <div>
             <img src="/assets/assets/brainwave.svg" alt="site-logo">
         </div>
@@ -44,25 +44,95 @@
         </nav>
      </div>
 
-    <!-- --------- main content starts here -------- -->
+    <!-- --------- MAIN CONTENT STARTS HERE -------- -->
     <main>
-        <section class="relative top-[5.3rem] text-center bg-cover bg-center bg-[url('/assets/assets/hero/hero-background.jpg')]">
+        <section class="positioning text-center bg-cover bg-center bg-[url('/assets/assets/hero/hero-background.jpg')]">
 
-            <div class="container pt-28 flex flex-col justify-center items-center gap-8 ">
-                <h1 class="h1 max-w-[55rem]">Explore the Possibilities of AI Chatting with Brainwave</h1>
+            <div class="container pt-28 flex flex-col justify-center items-center gap-4  md:gap-8 ">
+                <h1 class="h1 max-w-[55rem]">Explore the new Technology for Voting with Brainwave</h1>
 
-                <p class="body-1 max-w-[50rem]">Unleash the power of AI within Brainwave. Upgrade your productivity with Brainwave, the open AI chat app.</p>
+                <p class="body-1 text-[#cac6dd] max-w-[50rem]">Unleash the power of Tech within Brainwave. Vote using Biometrics with Brainwave, the open E-voting app.</p>
 
-                <button class="button">get started</button>
+                <button class="button bg-slate-300 text-black hover:text-violet-500 px-6 py-[.8rem] mb-10">get started</button>
 
-                <div class="h-[32rem] w-[70%] md:h-[38rem] md:w-[95%] lg:h-[35rem] lg:w-[80%] border-2 border-green-400 rounded-lg relative">
-                    <div class="bg-neutral-500 h-[1.3rem] border-t rounded-lg"></div>
+                <div class="h-[25rem] w-[95%] md:h-[38rem] md:w-[95%] lg:h-[32rem] p-1 lg:w-[80%] bg-conic-gradient rounded-2xl relative">
+                    <div class="bg-n-10 h-[1.4rem] rounded-t-2xl"></div>
 
-                    <img src="/assets/assets/hero/robot.jpg" class="object-cover h-[calc(100%-1.3rem)] w-full border-b rounded-lg" alt="hero section image">
+                    <div class="h-[calc(100%-1.4rem)] rounded-b-2xl overflow-hidden">
+                        <img src="/assets/assets/hero/robot.jpg" class="w-full rounded-b-2xl scale-[1.55] md:scale-[1] lg:-translate-y-[19rem] object-cover" alt="hero section image">
+                    </div>
+
+                    <div class="flex gap-4 p-4 bg-n-8/90 backdrop-blur-xl absolute w-[90%] sm:w-[55%] bottom-10 rounded-full left-1/2 transform -translate-x-1/2">
+                        <img src="/assets/assets/loading.png" alt="loading animation picture" height="15" width="25">
+                        <p>Vote is generating</p>
+                    </div>
                 </div>
             </div>
         </section>
+
+        <!-- -------FEATURES SECTION------- -->
+        <section class="positioning pt-12 md:pt-24">
+            <div class="container relative">
+                <div class="md:text-center mb-24 md:w-1/2 mx-auto">
+                    <h2 class="h2">Vote Smarter, Not Harder with Brainwave </h2>
+                </div>
+
+                <div class="flex flex-wrap gap-8 xl:justify-around" id="feature-card-container">
+                    <!-- -----FROM JS----- -->
+                </div>
+            </div>
+        </section>
+
+        <!-- ------Collabration Section------  -->
+         <section class="positioning ">
+            <div class="container pt-24">
+                <div class="flex justify-between">
+                    <div class="flex flex-col gap-8 body-1 bg-red-400 md:w-[35%]">
+                        <h2 class="h2 ">AI Chat App for seamless collaboration</h2>
+                        <div>
+                            <h4 class="flex gap-4 mb-3"> <img src="/assets/assets/check.svg" alt="">Seamless Integration</h4>
+                            <p class="text-n-4 ">With smart automation and top-notch security, it's the perfect solution for teams looking to work smarter.</p>
+                        </div>
+
+                        <div>
+                            <h4 class="flex gap-4"><img src="/assets/assets/check.svg" alt=""> smart Automation</h4>
+                        </div>
+                        <div>
+                            <h4 class="flex gap-4"> <img src="/assets/assets/check.svg" alt="">Top-notch Security</h4>
+                        </div>
+
+                        <div class="mt-8">
+                            <button class="bg-cover hover:text-violet-500 px-6 py-3 bg-[url('/assets/assets/benefits/card-6.svg')]">Try It Now</button>
+                        </div>
+                    </div>
+
+                    <div class="bg-yellow-50 md:w-[50%] flex flex-col items-center gap-24">
+                        <p class="body-1 text-n-4 mt-6 md:w-[65%] ">With smart automation and top-notch security, it's the perfect solution for teams looking to work smarter.</p>
+
+                        <!-- <div class="bg-black"> -->
+                            <div class="w-[22rem] flex aspect-square scale-75 md:scale-100 rounded-full border border-n-6">
+                                <div class="w-60 flex aspect-square m-auto rounded-full border border-n-6">
+                                    <div class="w-[6rem] flex aspect-square rounded-full m-auto border border-x-n-1 ">
+                                        <img src="/assets/assets/brainwave-symbol.svg" alt="BrainWave logo" class="m-auto">
+                                    </div>
+                                </div>
+                            
+                                <ul class="">
+                                    <li  class="absolute top-0 left-1/2 -translate-x-1/2"><img src="/assets/assets/collaboration/discord.png" height="58" width="58" alt=""></li>
+                                    <li  class="absolute top-[3.4rem] rotate-45 right-[2.5rem] -translate-y-1/2 "><img src="/assets/assets/collaboration/figma.png" height="38" width="38" alt=""></li>
+                                    <li class="absolute top-1/2 rotate-90 right-0 -translate-y-1/2"><img src="/assets/assets/collaboration/framer.png" height="38" width="38" alt=""></li>
+                                    <li class="absolute top-1/2 -translate-y-1/2 left-0"><img src="/assets/assets/collaboration/notion.png" height="48" width="48" alt=""></li>
+                                    <li class="absolute top-[3.4rem] -rotate-45 left-[2.5rem] -translate-y-1/2"><img src="/assets/assets/collaboration/photoshop.png" height="48" width="48" alt=""></li>
+                                    <li class="absolute rotate-135 bottom-[2rem] right-[2.5rem]"><img src="/assets/assets/collaboration/protopie.png" height="48" width="48" alt=""></li>
+                                    <li class="absolute bottom-[2rem] left-[2.5rem] -rotate-135"><img src="/assets/assets/collaboration/raindrop.png" height="48" width="48" alt=""></li>
+                                    <li class="absolute bottom-0 left-1/2 -translate-x-1/2"><img src="/assets/assets/collaboration/slack.png" height="48" width="48" alt=""></li>
+                                </ul>
+                            </div>
+                        <!-- </div>     -->
+                    </div>
+                </div>
+             </div>
+         </section>
     </main>
 </body>
 </html>
-

@@ -1,14 +1,25 @@
 import NavBar from "./classes_for_info/nav.js";
-import { navInfo } from "./dataFromBackend/data.js";
+import FeaturesCard from "./classes_for_info/feature-cards.js";
+import { navInfo, featuresInfo} from "./dataFromBackend/data.js";
 
 
 
 
 
 // INTIALIZING THE APP AND THE COMPONENTS
- const headerNavCompo = new NavBar(navInfo , 'navUl' , 'mobile-nav-ul');  //Nav for header
+ const headerNavCompo = new NavBar(navInfo , 'navUl' , 'mobile-nav-ul');  //Nav component for header
  headerNavCompo.renderNavPages();
  headerNavCompo.renderMobileNav();
+
+
+ const cardsFragment = document.createDocumentFragment(); //Creating cards components for feature section
+ const cardsContainer = document.getElementById('feature-card-container');
+ featuresInfo.forEach((item) => {
+   const card =  new FeaturesCard(item.heading ,item.iconUrl ,item.description , item.buttonText, item.light);
+    cardsFragment.append(card.root)
+ });
+cardsContainer.append(cardsFragment);
+
 
 
 //  EVENT FUNCTIONS AND LOGIC
